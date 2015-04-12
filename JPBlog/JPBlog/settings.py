@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'blog'
+	'blog',
+	'django_markdown',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -63,11 +64,10 @@ TEMPLATE_DIRS = (
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-       # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-		'NAME': 'JPBlog',
+		'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'firstblog',
 		'USER': 'root',
-		'PASSWORD': '********',
+		'PASSWORD': 'Inviciljigen1!',
     }
 }
 
@@ -89,3 +89,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, "templates"), )
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), )
