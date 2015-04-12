@@ -7,17 +7,17 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('blog', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='post',
+            name='posts',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('author', models.CharField(max_length=200)),
                 ('title', models.CharField(max_length=200)),
                 ('body', models.TextField()),
-                ('something', models.TextField()),
                 ('slug', models.SlugField(max_length=200)),
                 ('publish', models.BooleanField(default=True)),
                 ('created', models.DateTimeField(auto_now_add=True)),
@@ -29,5 +29,8 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'Blog Entries',
             },
             bases=(models.Model,),
+        ),
+        migrations.DeleteModel(
+            name='post',
         ),
     ]
