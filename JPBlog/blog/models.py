@@ -19,7 +19,8 @@ class posts(models.Model):
 	
 	def __str__(self):
 		return self.title
-		
+	
+#look it up	
 	class Meta:
 		verbose_name = "Blog Entry"
 		verbose_name_plural = "Blog Entries"
