@@ -1,0 +1,13 @@
+from django.contrib import admin
+from blog.models import posts
+from django_markdown.admin import MarkdownModelAdmin
+from django_markdown.widgets import AdminMarkdownWidget
+from django.db.models import TextField
+
+# Register your models here.
+class postadmin(MarkdownModelAdmin):
+	list_display = ("title", "created")
+	prepopulated_fields = {"slug": ("title",)}
+	formfield_overrides = {TextField: {'widget': AdminMarkdownWidget}}
+	
+admin.site.register(posts, postadmin)
