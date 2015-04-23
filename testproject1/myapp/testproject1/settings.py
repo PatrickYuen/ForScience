@@ -1,4 +1,4 @@
-# Django settings for testproject1 project.
+# Django settings for ForScienceBlog project.
 
 # Initialize App Engine and import the default settings (DB backend, etc.).
 # If you want to use a different backend you have to remove all occurences
@@ -10,8 +10,13 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+GAE_SETTINGS_MODULES = (
+    'gae_settings',
+)
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
+		('Jamie', 'jbw1995243@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -122,7 +127,7 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+ #   'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
