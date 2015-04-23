@@ -1,9 +1,9 @@
 # ForScience Blog
 Authors: Jamie Wu and Patrick Yuen
-Version: 1
-Date: 3/29/2015
+Version: 2
+Date: 4/16/2015
 
-This is version one of Jamie and Patrick's Basic Blog in Django using a MySQL Database.
+This is version two of Jamie and Patrick's Basic Blog in Django using Google App Engine with Django Non-Rel.
 
 Stuff to work on:
 Expanding blog bubbles like iphone
