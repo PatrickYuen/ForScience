@@ -1,4 +1,4 @@
-# ForScience Blog
+# ForScience Blog: http://jptesting-1.appspot.com/
 Authors: Jamie Wu and Patrick Yuen
 Version: 2
 Date: 4/16/2015
